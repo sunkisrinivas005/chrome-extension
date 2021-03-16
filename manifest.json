@@ -1,0 +1,19 @@
+{
+    "manifest_version" : 2,
+    "name" : "CE-1",
+    "version" : "2.0",
+    "description" : "CE-1",
+    "background": {
+        "scripts": ["index.js"]
+      },
+     "browser_action" : {
+         "default_icon":"icon128.png",
+         "default_popup" : "index.html"
+     },
+     "content_scripts" : [
+       {
+           "matches" : ["<all_urls>"],
+           "js" : ["content.js"]
+       }
+     ]
+}
